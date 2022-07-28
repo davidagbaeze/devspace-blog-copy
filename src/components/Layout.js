@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from './Header'
+import Search from './Search'
 
 export default function Layout({title, children, keywords, description}) {
   return (
@@ -13,7 +14,7 @@ export default function Layout({title, children, keywords, description}) {
       </Head>
 
       <Header/>
-
+      <Search/>
       <main className='container mx-auto my-7'>{children}</main>
     </div>
   )
