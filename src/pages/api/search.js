@@ -3,11 +3,11 @@ import path from 'path'
 import matter from 'gray-matter'
 
 
-export default (req, res) => {
+export default function search(req, res) {
   let posts
 
   if (process.env.NODE_ENV === 'production') {
-    // Fetch from cache
+    // Fetch from e
     posts = require('../../cache/data').posts
   } else {
     const files = fs.readdirSync(path.join('./src/posts'))

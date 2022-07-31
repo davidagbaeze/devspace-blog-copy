@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import CategoryLabel from '@/components/CategoryLabel'
 import Link from 'next/link'
 import { marked } from 'marked'
+import Image from 'next/image'
 import matter from 'gray-matter'
 
 export default function PostPage({frontmatter: {title, category, date, author_image, author, cover_image}, content, slug}) {
