@@ -27,10 +27,10 @@ function postData() {
 try {
   fs.readdirSync('src/cache')
 } catch (error) {
-  fs.mkdirSync('cache')
+  fs.mkdirSync('src/cache')
 }
 
-fs.writeFile('cache/data.js', postData(), function (err) {
+fs.writeFile('src/cache/data.js', postData(), function (err) {
   if (err) return console.log(err)
   console.log('Posts Cached...')
 })
