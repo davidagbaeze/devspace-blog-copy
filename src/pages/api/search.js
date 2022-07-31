@@ -8,7 +8,7 @@ export default function search(req, res) {
 
   if (process.env.NODE_ENV === 'production') {
     // Fetch from e
-    posts = require('../..data/cache/data').posts
+    posts = require('../../cache/data').posts
   } else {
     const files = fs.readdirSync(path.join('./src/posts'))
 
