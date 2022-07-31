@@ -8,7 +8,7 @@ export default function Header() {
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <Link href='/'>
           <a className='flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0'>
-            <Image src='/images/logo.png' width={40} height={40} />
+            <Image src='/images/logo.png' alt='' width={40} height={40} />
             <span className='ml-3 text-xl'>DevSpace</span>
           </a>
         </Link>
