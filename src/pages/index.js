@@ -25,9 +25,6 @@ export default function HomePage({posts}) {
 
 
 export async function getStaticProps(){
-  
-
-
 
   return{
     props: {
